@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 655px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 'header header'
+                              'sidebar main'
+                              'footer footer';
+
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+
+
+    }
+    .header{
+        grid-area: header;
+        border: 1px solid black;
+        background-color: #ee90ef;
+        
+    }
+    .sidebar{
+        grid-area: sidebar;
+        border: 1px solid black;
+        background-color: #dbb8f9;
+    }
+    .main{
+        grid-area: main;
+        border: 1px solid black;
+        background-color: #cb7474;
+    }
+    .footer{
+        grid-area: footer;
+        border: 1px solid black;
+        background-color: #c1e69d;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+    <div class="header">HEADER</div>
+    <div class="sidebar">SIDEBAR</div>
+    <div class="main">MAIN CONTENT</div>
+    <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>

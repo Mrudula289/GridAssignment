@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .gallery{
+        width: 100%;
+        height: 650px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+         gap: 15px;
+        padding: 20px;
+    }
+    .gallery img{
+    width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.gallery img:hover{
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px 5px black ;
+}
+h1{
+    text-align: center;
+}
+</style>
+<body>
+     <h1>Tulip Gallery....🌷</h1>
+    <div class="gallery">
+        <img src="./assests/tulip.jpeg"/>
+         <img src="./assests/tulip8.jpeg"/>
+          <img src="./assests/tulip2.webp"/>
+           <img src="./assests/tulip4.jpeg"/>
+            <img src="./assests/tulip1.jpeg"/>
+             <img src="./assests/tulip7.jpeg"/>
+              <img src="./assests/tulip6.webp"/>
+               <img src="./assests/tulip3.jpeg"/>
+                <img src="./assests/tulip9.jpeg"/>
+                 <img src="./assests/tulip5.webp"/>
+                   <img src="./assests/tulip10.webp"/>
+                   <img src="./assests/tulip1.jpeg" />
+    </div>
+</body>
+</html> 

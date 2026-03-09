@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Layout</title>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+.container{
+
+display:grid;
+
+grid-template-columns:200px 1fr 200px;
+
+grid-template-rows:80px 1fr 80px;
+
+grid-template-areas:
+
+"header header header"
+"nav main aside"
+"footer footer footer";
+
+height:100vh;
+}
+
+header{
+grid-area:header;
+background:#3498db;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+nav{
+grid-area:nav;
+background:#2ecc71;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+main{
+grid-area:main;
+background:#ecf0f1;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+aside{
+grid-area:aside;
+background:#f39c12;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+footer{
+grid-area:footer;
+background:#34495e;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>Header</header>
+
+<nav>Navigation</nav>
+
+<main>Main Content</main>
+
+<aside>Aside</aside>
+
+<footer>Footer</footer>
+
+</div>
+
+</body>
+</html>
